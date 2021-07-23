@@ -20,7 +20,7 @@ body {
     --spice-misc: #50fa7b;
 }
 
-/* Remove Premium button */
+/* Remove Premium button */ 
 
 button[class="_3f37264be67c8f40fa9f76449afdb4bd-scss _110dbc41d89af63f97cdd8b7cd7fea47-scss _186766435454b6e18fec29440fbb9fc4-scss"] {
     display: none !important;
@@ -58,6 +58,10 @@ div[role="presentation"]  {
     background-color: var(--spice-main) !important;
 }
 
+section[data-testid="home-page"] {
+  background-color: var(--spice-main) !important;
+}
+
 ._2411182f42f92a221e29c993de036981-scss {
     background-color: var(--spice-main) !important;
 }
@@ -80,6 +84,14 @@ div[class="_1066d722d4c5fe45076daa358de0a969-scss _898a0ac18270b333d95d8402650e2
 
 footer[class="_82a78ff58d3fcba0cb9b8083fe6dd05c-scss"] {
     background-color: var(--spice-sec-player) !important;
+}
+
+/*Likes */
+
+.a65d8d62fe56eed3e660b937a9be8a93-scss, 
+.a65d8d62fe56eed3e660b937a9be8a93-scss:focus, 
+.a65d8d62fe56eed3e660b937a9be8a93-scss:hover {
+  color: var(--spice-card) !important;
 }
 
 /* Images */
