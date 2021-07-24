@@ -1,18 +1,28 @@
 {
     "manifest_version": 3,
-    "name": "Spotify Dracula Theme Extension",
+    "name": "Spotify Custom Theme",
     "version": "1.0.0",
     
     "description": "",
     "author": "Darkempire78",
     "homepage_url": "https://github.com/Darkempire78/",
 
-    "permissions": ["scripting","tabs"],
+    "background": {
+        "service_worker": "background.js"
+    },
 
-    "content_scripts": [
-        {
-            "matches": ["https://open.spotify.com/*"],
-            "css": ["style.css"]
-        }
-    ]
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting",
+        "tabs"
+    ],
+
+    "host_permissions": [
+        "https://open.spotify.com/*"
+    ],
+
+    "action": {
+        "default_popup": "options.html"
+    }
 }

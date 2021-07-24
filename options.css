@@ -1,0 +1,11 @@
+.content {
+    margin: 10px;
+}
+
+#titleContainer, #saveButtonContainer {
+    text-align: center;
+}
+
+#saveButtonContainer {
+    margin-top: 20px;
+}

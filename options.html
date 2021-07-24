@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+        <link rel="stylesheet" href="options.css">
+    </head>
+
+    <body>
+        <div class="content">
+            
+            <div id="titleContainer">
+                <img src="assets/icon128.png" width="128px">
+                <h1>Spotify Custom Theme</h1>
+            </div>
+            
+            <div>
+                <h3 class="subtitle is-4">Theme</h3>
+                <div class="select">
+                    <select id="themeSelector">
+                        <option value="default.css">Default</option>
+                        <option value="dracula.css">Dracula</option>
+                    </select>
+                </div>
+            </div>
+
+            <div>
+                <div id="status"></div>
+                <button id="save" class="button is-success">Save options</button>
+            </div>
+        </div>
+
+        <script src="options.js"></script>
+    </body>
+</html>
