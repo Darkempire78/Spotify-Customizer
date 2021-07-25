@@ -26,6 +26,12 @@ button[class="_3f37264be67c8f40fa9f76449afdb4bd-scss _110dbc41d89af63f97cdd8b7cd
     display: none !important;
 }
 
+/* Profile */
+
+._4ee230c31251c943f9f9b988c8b1294a-scss {
+    border-radius: 50% !important;
+}
+
 /* Navbar */
 
 nav[class="Root__nav-bar"] {
