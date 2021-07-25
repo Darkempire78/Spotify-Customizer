@@ -114,6 +114,16 @@ div[class="_1066d722d4c5fe45076daa358de0a969-scss _898a0ac18270b333d95d8402650e2
     background-image: none !important;
 }
 
+/* Biography */
+
+li._95c63d8d8f105881620bdf062feaf969-scss {
+    background-color: var(--spice-main) !important;
+}
+
+div.os-viewport {
+    background-color: var(--spice-main) !important;
+}
+
 /* Player */
 
 footer[class="_82a78ff58d3fcba0cb9b8083fe6dd05c-scss"] {

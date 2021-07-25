@@ -1,18 +1,20 @@
-function save_options() {
-    let blockPromotedTweets = document.getElementById('blockPromotedTweets').checked;
-    let blockPromotedTrends = document.getElementById('blockPromotedTrends').checked;
+async function save_options() {
+    let themeSelected = document.getElementById('themeSelector').value;
 
     chrome.storage.sync.set({
-        blockPromotedTweets: blockPromotedTweets,
-        blockPromotedTrends: blockPromotedTrends,
+        themeSelected: themeSelected,
     }, function() {
         // Update status to let user know options were saved.
         let status = document.getElementById('status');
         status.textContent = 'Options saved.';
+        chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+            chrome.tabs.update(tabs[0].id, {url: tabs[0].url});
+        });
         setTimeout(function() {
             status.textContent = '';
         }, 750);
     });
+    
 }
   
 // Restores select box and checkbox state using the preferences
@@ -20,12 +22,10 @@ function save_options() {
 function restore_options() {
     // Use default value
     chrome.storage.sync.get({
-        blockPromotedTweets: true,
-        blockPromotedTrends: true
+        themeSelected: "default.css"
     }, function(items) {
         console.log(items)
-        document.getElementById('blockPromotedTweets').checked = items.blockPromotedTweets;
-        document.getElementById('blockPromotedTrends').checked = items.blockPromotedTrends;
+        document.getElementById('themeSelector').value = items.themeSelected;
     });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
