@@ -1,11 +1,17 @@
 {
     "manifest_version": 3,
-    "name": "Spotify Custom Theme",
+    "name": "Spotify Customizer",
     "version": "1.0.0",
     
     "description": "Extension to customize Spotify web client.",
     "author": "Darkempire78",
     "homepage_url": "https://github.com/Darkempire78/",
+
+    "icons": {
+        "16": "assets/logo16.png",
+        "48": "assets/logo48.png",
+        "128": "assets/logo128.png"
+    },
 
     "background": {
         "service_worker": "background.js"

@@ -1,0 +1,14 @@
+div:not(
+    .os-scrollbar-handle, /* Scroll bar */
+    ._982a1a5bec5b5ed635faecee50abbf7f-scss, /* Search bar */
+    ._73c0f5c4b73a2d9c1d9186747c209b3e-scss, /* Main - first menu / Shortcut */
+    div[data-testid="card-click-handler"], /* Images in the main menu */
+    div[class="_44881e85bbb5cd28916f811dff7c6bf2-scss _3b68cfe0e56b5af0f7d01a8872187b6d-scss f3fc214b257ae2f1d43d4c594a94497f-scss"], /* Banner "is playing in another device" */
+    .progress-bar__fg /* Track progress bars */
+) {
+    background-color: black !important;
+}
+
+html {
+    color: whitesmoke !important;
+}

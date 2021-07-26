@@ -1,8 +1,10 @@
 async function save_options() {
     let themeSelected = document.getElementById('themeSelector').value;
+    let blockSubscribeButton = document.getElementById('blockSubscribeButton').checked;
 
     chrome.storage.sync.set({
         themeSelected: themeSelected,
+        blockSubscribeButton: blockSubscribeButton,
     }, function() {
         // Update status to let user know options were saved.
         let status = document.getElementById('status');
@@ -22,10 +24,13 @@ async function save_options() {
 function restore_options() {
     // Use default value
     chrome.storage.sync.get({
-        themeSelected: "default.css"
+        themeSelected: "default.css",
+        blockSubscribeButton: true
     }, function(items) {
         console.log(items)
         document.getElementById('themeSelector').value = items.themeSelected;
+        document.getElementById('blockSubscribeButton').checked = items.blockSubscribeButton;
+
     });
 }
 document.addEventListener('DOMContentLoaded', restore_options);
