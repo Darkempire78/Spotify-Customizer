@@ -1,20 +1,20 @@
-![](https://www.codefactor.io/repository/github/darkempire78/twitter-ad-blocker/badge?style=for-the-badge) ![](https://img.shields.io/github/repo-size/Darkempire78/Twitter-Ad-Blocker?style=for-the-badge)
+![](https://www.codefactor.io/repository/github/darkempire78/spotify-customizer/badge?style=for-the-badge) ![](https://img.shields.io/github/repo-size/Darkempire78/spotify-customizer?style=for-the-badge)
 
 <img src="assets/logo128.png" width="100"/>
 
 # Spotify Customizer
 
-Chrome extension to customize Spotify web client.
+Chrome extension to customize Spotify web client. 
 
-## Preview
+## Theme Preview
 
 ### Dracula theme
 
-<img src="assets/logo128.png" width="100"/>
+<img src="Picture2.png" width="600"/>
 
 ### Amoled theme
 
-<img src="assets/logo128.png" width="100"/>
+<img src="Picture3.png" width="600"/>
 
 ## Installation
 
@@ -32,7 +32,7 @@ Chrome extension to customize Spotify web client.
 ## Options
 You can click on the extension icon
 
-<img src="assets/options.png"/>
+<img src="Picture1.png" height="500"/>
 
 ## Create a new theme
 
