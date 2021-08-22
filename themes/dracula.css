@@ -22,7 +22,7 @@ body {
 
 /* Profile */
 
-._4ee230c31251c943f9f9b988c8b1294a-scss {
+figure[data-testid="user-widget-avatar"] {
     border-radius: 50% !important;
 }
 
@@ -36,12 +36,20 @@ div[class="_7b6273541d969069bb18c4fcae4120e7-scss"] {
     background: none !important; /* Remove the shadow*/
 }
 
-.d1c9699572913ee01b0280946ab1f470-scss { 
+a[aria-current="page"]:not(
+    a.logo
+) { 
     background-color: var(--spice-card) !important; /*Backgound color of the selected menu*/
 }
 
 span[as="span"] {
     color: var(--spice-subtext) !important;
+}
+
+/* Top bar */
+
+.JBEYL0L5KiIeKcmT3gNp {
+    background-color: var(--spice-main) !important;
 }
 
 /* Main background */
@@ -70,6 +78,10 @@ section[data-testid="home-page"] {
     background-color: var(--spice-main) !important;
 }
 
+.OALAQFKvC7XQOVYpklB4 {
+    background-color: var(--spice-main) !important; /* Remove card background */
+}
+
 /* Playlist */
 
 section[role="presentation"] {
@@ -80,8 +92,9 @@ div[class="_1066d722d4c5fe45076daa358de0a969-scss"]  {
     background-color: var(--spice-main) !important;
 }
 
-div[class="_1066d722d4c5fe45076daa358de0a969-scss _898a0ac18270b333d95d8402650e2c46-scss"]  {
+.iYoKwYJwszPZXYQCZQ4s {
     background: none !important;
+    background-color: var(--spice-main) !important;
 }
 
 .contentSpacing {
@@ -120,7 +133,7 @@ div.os-viewport {
 
 /* Player */
 
-footer[class="_82a78ff58d3fcba0cb9b8083fe6dd05c-scss"] {
+.Root__now-playing-bar footer {
     background-color: var(--spice-sec-player) !important;
 }
 
