@@ -52,6 +52,10 @@ span[as="span"] {
     background-color: var(--spice-main) !important;
 }
 
+.Root__top-bar {
+    background-color: var(--spice-main) !important;
+}
+
 /* Main background */
 
 div[class="os-content"] {
