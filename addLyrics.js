@@ -104,11 +104,8 @@ function myCallback() {
     let title = document.querySelector("div[data-testid='context-item-info-title']").getElementsByTagName("a")[0].innerText.replaceAll(" ", "").replaceAll("'", "").replaceAll("?", "").replaceAll("!", "").toLowerCase();
     let author = document.querySelector("div[data-testid='context-item-info-subtitles']").getElementsByTagName("a")[0].innerText.replaceAll(" ", "").replaceAll("'", "").replaceAll("?", "").replaceAll("!", "").toLowerCase();
     const lyricsURL = `https://www.azlyrics.com/lyrics/${removeDiacritics(author)}/${removeDiacritics(title)}.html`
-    console.log("1 : " + currentLyricsURL)
-    console.log("2 : " + lyricsURL)
     if (lyricsURL != currentLyricsURL) {
         if (document.getElementById("lyricsObject")) { document.getElementById("lyricsObject").remove() }
-        console.log("OUIIIIIIIIIIIIIIIIIIIIII")
         createLyricsObject(lyricsURL)
         currentLyricsURL = lyricsURL
     }
