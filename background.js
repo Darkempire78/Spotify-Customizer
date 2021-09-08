@@ -25,5 +25,18 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             })
             .catch(err => console.log(err));
         });
+    
+    
+
+
+        chrome.scripting.executeScript(
+            {
+              target: {tabId: tabId},
+              files: ['addLyrics.js'],
+            }
+        )
+        
+    
+    
     }
 });

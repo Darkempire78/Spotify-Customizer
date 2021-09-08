@@ -10,11 +10,11 @@ Chrome extension to customize Spotify web client.
 
 ### Dracula theme
 
-<img src="Picture2.png" width="600"/>
+<img src="assets/Picture2.png" width="600"/>
 
 ### Amoled theme
 
-<img src="Picture3.png" width="600"/>
+<img src="assets/Picture3.png" width="600"/>
 
 ## Installation
 
@@ -32,7 +32,7 @@ Chrome extension to customize Spotify web client.
 ## Options
 You can click on the extension icon
 
-<img src="Picture1.png" height="500"/>
+<img src="assets/Picture1.png" height="500"/>
 
 ## Create a new theme
 
