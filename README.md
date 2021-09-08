@@ -4,7 +4,7 @@
 
 # Spotify Customizer
 
-Chrome extension to customize Spotify web client. 
+Chrome extension to customize Spotify web client (themes, lyrics, ...)
 
 ## Theme Preview
 
