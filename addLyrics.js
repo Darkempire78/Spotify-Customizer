@@ -134,19 +134,35 @@ function createLyricsObject(url) {
 // });
 
 }
+
+// Create the lyrics container
 const div = document.createElement("div");
 div.id = "lyricsContainer";
-// div.style.display = "none";
+div.style.display = "none";
 div.style.height = "100vh";
 div.style.width = "35%";
 div.style.position = "absolute";
 div.style.paddingTop = "60px";
 div.style.paddingBottom = "90px";
 div.style.right = "0"
-// div.style.overflowY = "auto";
-div.style.background = "red"
 div.style.transition = "max-height 1000ms ease-in-out";
 
 
 const mainView = document.getElementsByClassName("Root__main-view");
 mainView[0].appendChild(div);
+
+// Add the button
+buttonContainer = document.getElementsByClassName("ExtraControls")[0]
+const b = document.createElement("button");
+b.classList.add("control-button");
+b.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 24 24"><path d="M3.979 15.045c-1.468.978-2.168 2.263-2.231 3.955h-1.748c.069-2.346 1.1-4.186 3.153-5.497l.826 1.542zm15.36-12.045c1.468 0 2.661 1.194 2.661 2.662 0 1.115-.651 2.238-2.085 2.521l-2.366-4.417c.63-.662 1.268-.766 1.79-.766zm0-2c-1.852 0-3.198.966-4.138 2.619l3.545 6.618c3.4.222 5.254-2.149 5.254-4.575 0-2.598-2.098-4.662-4.661-4.662zm-3.722 7.631l-7.418 2.977 6.602-4.5-.949-1.772-9.38 6.393 1.557 2.906 10.539-4.229-.951-1.775zm-6.38 6.87c.633.619.764 1.648.764 2.558v4.941h1.999v-5.097c0-1.776.662-3.024 1.735-4.207l-4.498 1.805z"/></svg>';
+b.id = "lyricsButton"
+b.style.width = "32px";
+b.onclick = () => {
+    if (document.getElementById("lyricsContainer").style.display === "block") {
+        document.getElementById("lyricsContainer").style.display = "none"
+    } else {
+        document.getElementById("lyricsContainer").style.display = "block"
+    }
+};
+buttonContainer.prepend(b)
