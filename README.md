@@ -16,6 +16,10 @@ Chrome extension to customize Spotify web client.
 
 <img src="assets/Picture3.png" width="600"/>
 
+### Lyrics
+
+<img src="assets/Picture4.png" width="600"/>
+
 ## Installation
 
 **CHROME**
@@ -27,6 +31,7 @@ Chrome extension to customize Spotify web client.
 
 ## Features
 * Remove subscribe button
+* Add Lyrics
 * Change the theme
 
 ## Options

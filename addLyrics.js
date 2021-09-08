@@ -114,9 +114,6 @@ function myCallback() {
     }
 }
 
-// https://www.azlyrics.com/lyrics/naps/carrevip.html
-// https://www.azlyrics.com/lyrics/Naps/CarreVIP.html
-
 function createLyricsObject(url) {
     const iframe = document.createElement("iframe");
     iframe.id = "lyricsObject"
@@ -128,12 +125,12 @@ function createLyricsObject(url) {
 
     document.getElementById("lyricsContainer").append(iframe)
 
-
 // obj.addEventListener("load", function() {
 //     document.getElementById("onetrust-banner-sdk").remove()
 // });
 
 }
+
 
 // Create the lyrics container
 const div = document.createElement("div");
@@ -147,9 +144,9 @@ div.style.paddingBottom = "90px";
 div.style.right = "0"
 div.style.transition = "max-height 1000ms ease-in-out";
 
-
 const mainView = document.getElementsByClassName("Root__main-view");
 mainView[0].appendChild(div);
+
 
 // Add the button
 buttonContainer = document.getElementsByClassName("ExtraControls")[0]
