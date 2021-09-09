@@ -99,10 +99,15 @@ function removeDiacritics (str) {
     return str;
 }
 
+function cleanTitleAuthorString(query) {
+    return query.replaceAll(" ", "").replaceAll("'", "").replaceAll("?", "").replaceAll("!", "").replaceAll(".", "").replaceAll(",", "").replaceAll("(", "").replaceAll(")", "").replaceAll("&", "").toLowerCase();
+}
+
 function myCallback() {
     // Get track title
-    let title = document.querySelector("div[data-testid='context-item-info-title']").getElementsByTagName("a")[0].innerText.replaceAll(" ", "").replaceAll("'", "").replaceAll("?", "").replaceAll("!", "").toLowerCase();
-    let author = document.querySelector("div[data-testid='context-item-info-subtitles']").getElementsByTagName("a")[0].innerText.replaceAll(" ", "").replaceAll("'", "").replaceAll("?", "").replaceAll("!", "").toLowerCase();
+    let title = cleanTitleAuthorString(document.querySelector("div[data-testid='context-item-info-title']").getElementsByTagName("a")[0].innerText)
+    title = title.split("(feat")[0].replaceAll(" ", "");
+    let author = cleanTitleAuthorString(document.querySelector("div[data-testid='context-item-info-subtitles']").getElementsByTagName("a")[0].innerText)
     const lyricsURL = `https://www.azlyrics.com/lyrics/${removeDiacritics(author)}/${removeDiacritics(title)}.html`
     if (lyricsURL != currentLyricsURL) {
         if (document.getElementById("lyricsObject")) { document.getElementById("lyricsObject").remove() }
