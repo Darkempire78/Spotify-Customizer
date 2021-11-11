@@ -143,6 +143,10 @@ div.os-viewport {
     background-color: var(--spice-sec-player) !important;
 }
 
+._mSbAWxlXgc2ONtpnuXQ:before, ._mSbAWxlXgc2ONtpnuXQ:after {
+    background: none !important;
+}
+
 /*Likes */
 
 .a65d8d62fe56eed3e660b937a9be8a93-scss, 
