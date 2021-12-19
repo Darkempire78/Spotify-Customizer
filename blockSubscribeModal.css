@@ -1,0 +1,5 @@
+/* Remove Subscribe modal */ 
+
+div.GenericModal__overlay {
+    display: none !important;
+}

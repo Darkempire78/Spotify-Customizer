@@ -31,6 +31,7 @@ Chrome extension to customize Spotify web client (themes, lyrics, ...)
 
 ## Features
 * Remove subscribe button
+* Remove subscribe modal
 * Add Lyrics
 * Change the theme
 

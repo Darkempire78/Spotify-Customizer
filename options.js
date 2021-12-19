@@ -1,11 +1,13 @@
 async function save_options() {
     let themeSelected = document.getElementById('themeSelector').value;
     let blockSubscribeButton = document.getElementById('blockSubscribeButton').checked;
+    let blockSubscribeModal = document.getElementById('blockSubscribeModal').checked;
     let addLyricsButton = document.getElementById('addLyricsButton').checked;
 
     chrome.storage.sync.set({
         themeSelected: themeSelected,
         blockSubscribeButton: blockSubscribeButton,
+        blockSubscribeModal: blockSubscribeModal,
         addLyricsButton: addLyricsButton,
     }, function() {
         // Update status to let user know options were saved.
@@ -28,11 +30,13 @@ function restore_options() {
     chrome.storage.sync.get({
         themeSelected: "default.css",
         blockSubscribeButton: true,
+        blockSubscribeModal: true,
         addLyricsButton: true
     }, function(items) {
         console.log(items)
         document.getElementById('themeSelector').value = items.themeSelected;
         document.getElementById('blockSubscribeButton').checked = items.blockSubscribeButton;
+        document.getElementById('blockSubscribeModal').checked = items.blockSubscribeModal;
         document.getElementById('addLyricsButton').checked = items.addLyricsButton;
     });
 }

@@ -4,15 +4,27 @@ chrome.tabs.onUpdated.addListener((tabId, changeInfo, tab) => {
             
             let themeSelected = obj ? obj.themeSelected : "default.css";
             let blockSubscribeButton = obj && typeof obj.blockSubscribeButton === 'boolean' ? obj.blockSubscribeButton : true;
+            let blockSubscribeModal = obj && typeof obj.blockSubscribeModal === 'boolean' ? obj.blockSubscribeModal : true;
             let addLyricsButton = obj && typeof obj.addLyricsButton === 'boolean' ? obj.addLyricsButton : true;
 
             if (blockSubscribeButton == true) {
                 chrome.scripting.insertCSS({
                     target: { tabId: tabId },
-                    files: [`./removePremiumButton.css`]
+                    files: [`./blockSubscribeButton.css`]
                 })
                 .then(() => {
                     console.log("Subscribe button removed");
+                })
+                .catch(err => console.log(err));
+            }
+
+            if (blockSubscribeModal == true) {
+                chrome.scripting.insertCSS({
+                    target: { tabId: tabId },
+                    files: [`./blockSubscribeModal.css`]
+                })
+                .then(() => {
+                    console.log("Subscribe modal removed");
                 })
                 .catch(err => console.log(err));
             }

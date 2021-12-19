@@ -1,7 +1,7 @@
 {
     "manifest_version": 3,
     "name": "Spotify Customizer",
-    "version": "1.0.0",
+    "version": "1.2.0",
     
     "description": "Extension to customize Spotify web client.",
     "author": "Darkempire78",
